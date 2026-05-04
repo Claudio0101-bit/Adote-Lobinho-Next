@@ -1,0 +1,54 @@
+
+.header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+  position: sticky;
+  top:0;
+  z-index: 1000;
+
+  background-color: #85CDF5;
+  height:130px;
+  font-family: var(--font-darker-grotesque);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width:100%;
+}
+
+.link {
+  text-decoration: none;
+  color:black;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.quemSomosLink,
+.nossosLobinhosLink{
+  font-size:30px;
+  font-weight: 700;
+  position: relative;
+
+  &:after {
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:3px;
+    background-color: black;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::after {
+    width:70%;
+  }
+}

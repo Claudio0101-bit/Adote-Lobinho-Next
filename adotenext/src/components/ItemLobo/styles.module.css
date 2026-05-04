@@ -1,0 +1,173 @@
+.nameTitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.ageTitle {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--font-darker-grotesque), sans-serif;
+    line-height: 100%; /* ajustar depois */
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* Cada Card Individual de Lobo */
+.wolfCard {
+    /* width: 90%; -------------------- ATENÇÃO */ 
+
+    /* Posicionamento do Conteúdo */ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+/* <div> que porta a Imagem do Lobo e seu Fundo */
+.wolfImage img {
+    /* Largura e Altura - Verificação Constante */
+    width: 430px;
+    height: 328px;
+}
+
+.wolfImage div {
+    /* Largura e Altura - Verificação Constante */
+    width: 430px;
+    height: 328px;
+
+    position: absolute;
+    z-index: -1;
+
+    transform: translate(-30px, -30px);
+
+    /* Detalhes da <div> de Fundo */ 
+    background-color: #2C5680;
+    border: 4px solid #333333;
+}
+
+/* <div> que porta as Informações do Lobo */
+.wolfInfo {
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    gap: 30px;   
+
+}
+
+.titleDiv {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.adoptLink {
+    max-width: 157px;
+    min-width: 157px;
+
+    width: 100%;
+    height: 46px;
+    
+    opacity: 1;
+    background-color: #DEB959;
+    color: white;
+    
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: none;
+    cursor:pointer
+}
+
+.adoptLinkAdopted {
+    max-width: 157px;
+    width: 100%;
+    height: 46px;
+    opacity: 1;
+    background-color: #7AAC3A;
+    color: white;
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: none;
+    cursor:default;
+}
+
+.ownerText {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0%;
+}
+
+.divNameAge {
+    width: 100%;
+
+    /* Posicionamento do Conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.wolfInfo span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.paragraph {
+    text-align: left;
+}
+
+/* Diferenciação dos Cards de Lobos - Elementos Pares */
+.wolfEvenCard {
+    flex-direction: row-reverse;
+}
+
+.titleDivEven {
+    flex-direction: row-reverse;
+}
+
+.wolfEvenInfo div {
+    align-items: flex-end;
+}
+
+.wolfEvenInfo .paragraph {
+    text-align: right;
+}
+
+.wolfEvenInfo .ownerDiv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wolfEvenImage div {
+    transform: translate(30px, -30px);
+}

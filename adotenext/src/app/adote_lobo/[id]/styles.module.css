@@ -1,0 +1,148 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+    padding: 30px 50px 50px 50px;
+}
+
+.titleSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.wolfFigure {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.wolfFigure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.divNameId {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 10px 0px;
+}
+
+.titleName {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.titleId {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.adoptForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    width: 70%;
+}
+
+.adoptForm input {
+    width: 100%;
+    
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    padding-left: 10px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.label {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.divNameAge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    width: 100%;
+}
+
+.nameInputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.ageInputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    width: 20%;
+}
+
+.emailInputDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.adoptBtn {
+    width: 209px;
+    height: 60px;
+    border-width: 1px;
+    
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    
+    background: #2C5680;
+    color: #FFFFFF;
+    
+    display: flex;
+    justify-content: center;
+    transition: all ease 0.2s;
+
+    &:hover {
+        background: #1B3A57;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}

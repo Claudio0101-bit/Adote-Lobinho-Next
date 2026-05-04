@@ -1,0 +1,142 @@
+.searchSection {
+    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.searchBar{
+    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    max-width: 940px;
+    height: 47px;
+   
+}
+
+.inputBar {
+    /*
+    max-width: 808px;
+    */
+    width: 100%;
+    height: 47px;
+    opacity: 1;
+    border-width: 1px;
+    padding-left: 50px;
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+.addLoboLink {
+    text-decoration: none;
+    color: inherit;
+    max-width: 130px;
+    width: 100%;
+    height: 47px;
+    opacity: 1;
+    background-color: #DEB959;
+    color: white;
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border:none;
+    cursor:pointer;
+    transition: all ease 0.3s;
+
+    &:active{
+        background-color: #806a34;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.searchBtn {
+    /*
+    padding-left: 10px;
+    */
+    position: absolute;
+    max-width: 33px;
+    width: 100%;
+    height: 33px;
+    left: 10px;
+    background-image: url("../../assets/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+}
+
+.inputPawSet {
+    position: relative;
+    max-width: 808px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.adoptedFilter {
+    /*
+    margin-left: 221px;
+    margin-top: 18px;
+    max-width: 264px;
+    */
+    
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 23px
+}
+
+.adoptedFilter p {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkFilter {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:focus{
+        accent-color: rgb(3, 3, 102);
+    }
+}
+
+.errorCase {
+    font-family: var(--font-darker-grotesque), sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}

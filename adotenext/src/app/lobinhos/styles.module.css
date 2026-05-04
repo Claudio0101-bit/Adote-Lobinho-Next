@@ -1,0 +1,31 @@
+
+body {
+    color: black;
+}
+
+.main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 50px;
+} 
+
+.wolfList {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.emptyMsg {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
